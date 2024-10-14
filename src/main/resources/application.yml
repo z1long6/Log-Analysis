@@ -1,0 +1,17 @@
+spring:
+  elasticsearch:
+    uris: http://112.126.71.188:9200
+  datasource:
+    url: jdbc:mysql://112.126.71.188:3306/log-analysis-database
+    username: root
+    password: 20301007
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    tracer: trace
